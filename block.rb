@@ -13,7 +13,7 @@ class Block
   end
 
 	def compute_hash_with_proof_of_work(difficulty="00")
-		nonce = 0
+		nonce = rand(0..10) # Cambio en la inicialización de nonce
 		loop do 
 			hash = calc_hash_with_nonce(nonce)
 			if hash.start_with?(difficulty)
