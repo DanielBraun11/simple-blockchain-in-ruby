@@ -41,7 +41,10 @@ def create_first_block
 	instance_variable_set( "@b#{i}", 
 												 Block.first( 
 													{ from: "Dutchgrown", to: "Vincent", what: "Tulip Bloemendaal Sunset", qty: 10 },
-													{ from: "Keukenhof", to: "Anne", what: "Tulip Semper Augustus", qty: 7 } )
+													{ from: "Keukenhof", to: "Anne", what: "Tulip Semper Augustus", qty: 7 },
+													{ from: "Daniel", to: "Marcos", what: "Books", qty: 5 },
+													{ from: "Diego", to: "Johan", what: "Pencils", qty: 7 }
+													)
 											 )
 	LEDGER << @b0
 	pp @b0
@@ -49,7 +52,7 @@ def create_first_block
 	add_block
 end
 	
-	
+  
 	
 def add_block
 	i = 1
