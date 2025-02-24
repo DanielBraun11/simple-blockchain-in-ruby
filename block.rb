@@ -44,3 +44,5 @@ class Block
     Block.new( previous.index+1, transactions, previous.hash )
   end
 end  # class Block
+
+#Prueba
